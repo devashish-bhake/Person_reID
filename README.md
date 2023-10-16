@@ -12,6 +12,7 @@ The person identification and tracking is implemented on the video of the crowd.
 Below is the sample output from the Person Identification model: 
 ![output_gif_1](https://github.com/devashish-bhake/Person_reID/blob/main/person_ID/output_video.gif)
 ![output_gif_2](https://github.com/devashish-bhake/Person_reID/blob/main/person_ID/output_video_2.gif)
+
 If you want to run multiple video based inputs in the person identification script then it can easily be done by using the following instructions:
 1. First locate the video_1, video_2...lines in ```personID.py``` file.
 2. If you want to give a video input then just give it the path for the video.
