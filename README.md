@@ -78,5 +78,6 @@ mAP:0.764341
 ### Demo Outputs
 The demo output has been generated using the query images of the dataset and the gallery images of the dataset. The demo output is generated using the ```demo.py``` file. The demo output is generated on the GPU.
 The demo outputs look like this:
+![output](https://github.com/devashish-bhake/Person_reID/blob/main/personReID/show.png?raw=true)
 
 In the above outputs we can see that the model was able to identify various images that were of the similar in the characteristic description of the query image.
