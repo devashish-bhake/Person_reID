@@ -106,5 +106,5 @@ the model has been trained on YOLOv8 using their python interface, and it has be
 The model was tested on 51 testing images that I created during the dataset creation and collection phase.
 
 ### Demo outputs
-
+![demo](https://github.com/devashish-bhake/Person_reID/blob/main/LicencePlateID/output.JPG?raw=true)
 The detected number plates have been stored in the sqlite database for further analysis and processing.
