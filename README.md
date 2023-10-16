@@ -85,3 +85,26 @@ The demo outputs look like this:
 ![output](https://github.com/devashish-bhake/Person_reID/blob/main/personReID/show.png?raw=true)
 
 In the above outputs we can see that the model was able to identify various images that were of the similar in the characteristic description of the query image.
+
+## Licence Plate Recognition
+### Dataset collection
+The dataset collection involves downloading a dataset that contains about 1295 images of car number plates and the annotations of the number plates. The dataset is divided into training and testing sets. The training set contains 1100 images, the validation set consists of 144 images and the testing set contains 51 images. The dataset is collected from public street view cameras with different cameras as well. 
+
+### Preprocessing
+the dataset has been preprocess by applying an auto-orient filter and the images have also been resized to 640x640 for better training. Augmentations have also been applied to counter the low number of training examples that we have. The augmentations that have been applied are:
+```
+outputs_per_training_example = 2
+grayscale = 0.25
+blur = 2.5
+noise = 0.05
+```
+
+### Training
+the model has been trained on YOLOv8 using their python interface, and it has been trained upto 20 epochs. The model that was selected for solving this particular task was the ```yolov8s.pt``` since that model was the perfect balance between model complexity and model inference efficiency. The model was trained on the GPU and the training time for 20 epochs was around 1.5 hrs.
+
+### Testing
+The model was tested on 51 testing images that I created during the dataset creation and collection phase.
+
+### Demo outputs
+
+The detected number plates have been stored in the sqlite database for further analysis and processing.
