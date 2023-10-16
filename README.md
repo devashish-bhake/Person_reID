@@ -8,6 +8,9 @@ The preprocessing of the images involves applying an auto-orient to the images a
 The model has been trained on the above dataset and will be used in the further processes
 ### Person Identification and Tracking
 The person identification and tracking is implemented on the video of the crowd. The video is first converted into frames and then the frames are passed through the model to detect the people in the frame. And as far as tracking through multiple video inputs or cameras is concerned it has been implemented using multithreading wherein multiple threads are running the same detection function parallely so that any change in one will be detected by the other and the tracking will be done accordingly. 
+### Sample Output
+Below is the sample output from the Person Identification model: 
+![output_gif_1](https://github.com/devashish-bhake/Person_reID/blob/main/person_ID/output_video.gif){loop=""}
 ## Person Re-identification
 ### Dataset collection
 The collection of dataset involves downloading the Market-1501 dataset which consists of 32,668 annotated bounding boxes of 1,501 identities. The dataset is divided into training and testing sets. The training set contains 12,936 images of 751 identities, while the testing set contains 19,732 images of 750 identities. The dataset is collected from public street view cameras with different cameras as well. The image annotations show which camera id has the image been captured from.
