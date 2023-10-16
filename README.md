@@ -107,4 +107,6 @@ The model was tested on 51 testing images that I created during the dataset crea
 
 ### Demo outputs
 ![demo](https://github.com/devashish-bhake/Person_reID/blob/main/LicencePlateID/output.JPG?raw=true)
-The detected number plates have been stored in the sqlite database for further analysis and processing.
+The detected number plates have been stored in the sqlite database for further analysis and processing. The schema of the database looks like this:
+![Screenshot from 2023-10-16 21-20-31](https://github.com/devashish-bhake/Person_reID/assets/79623853/9569984e-0bfe-41ec-85ae-111fa45dc92a)
+
