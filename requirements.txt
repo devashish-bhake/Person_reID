@@ -1,0 +1,12 @@
+pytesseract
+pandas
+sqlite3
+opencv-python
+ultralytics
+torch
+tqdm
+matplotlib
+scipy
+timm
+pillow
+
