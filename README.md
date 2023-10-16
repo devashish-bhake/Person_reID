@@ -57,6 +57,8 @@ In order to run the training code the following command is used:
 ```
 python train.py --gpu_ids 0 --name reid_hrnet --use_hr True --train_all --batchsize 32  --data_dir directory_of_training_data
 ```
+The final results of the training of the model is:
+![result](https://github.com/devashish-bhake/Person_reID/blob/main/personReID/model/reid_hrnet/train.jpg?raw=true)
 
 ### Testing
 The testing of the model is done using the ```test.py``` file. The model is tested on the query set and the gallery set. The model is tested on the GPU and the testing time is around 10 minutes. The model is tested on the query set and the gallery set and the results are saved in the ```result.txt``` file. The results of this code is a matlab file which contains all the extracted features of all the query images.
