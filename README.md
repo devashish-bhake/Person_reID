@@ -11,6 +11,7 @@ The person identification and tracking is implemented on the video of the crowd.
 ### Sample Output
 Below is the sample output from the Person Identification model: 
 ![output_gif_1](https://github.com/devashish-bhake/Person_reID/blob/main/person_ID/output_video.gif)
+![output_gif_2](https://github.com/devashish-bhake/Person_reID/blob/main/person_ID/output_video_2.gif)
 ## Person Re-identification
 ### Dataset collection
 The collection of dataset involves downloading the Market-1501 dataset which consists of 32,668 annotated bounding boxes of 1,501 identities. The dataset is divided into training and testing sets. The training set contains 12,936 images of 751 identities, while the testing set contains 19,732 images of 750 identities. The dataset is collected from public street view cameras with different cameras as well. The image annotations show which camera id has the image been captured from.
