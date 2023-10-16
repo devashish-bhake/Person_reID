@@ -22,7 +22,7 @@ for example if you have 5 cameras, make video_1, video_2 and so on till video_5 
 5. but beware that the more cameras you add the more load it will put on the system and the more VRAM and RAM will be needed to keep them running
 A sample output of 2 videos running at the same time is attached below (I have run 2 videos only because my laptop has enough vram for running only 2 inference engines at a time but the code has been written to accomodate any number of inference engines as long as the necessary hardware is provided):
 
-![](https://github.com/devashish-bhake/Person_reID/assets/79623853/86efe5f5-2849-4977-a3da-d9a6bfe557ef)
+https://github.com/devashish-bhake/Person_reID/assets/79623853/86efe5f5-2849-4977-a3da-d9a6bfe557ef
 
 ## Person Re-identification
 ### Dataset collection
