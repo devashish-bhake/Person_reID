@@ -12,6 +12,17 @@ The person identification and tracking is implemented on the video of the crowd.
 Below is the sample output from the Person Identification model: 
 ![output_gif_1](https://github.com/devashish-bhake/Person_reID/blob/main/person_ID/output_video.gif)
 ![output_gif_2](https://github.com/devashish-bhake/Person_reID/blob/main/person_ID/output_video_2.gif)
+If you want to run multiple video based inputs in the person identification script then it can easily be done by using the following instructions:
+1. First locate the video_1, video_2...lines in ```personID.py``` file.
+2. If you want to give a video input then just give it the path for the video.
+3. Whereas if you want to give it a camera input that is connected via usb, then replace the video paths with camera ids like 0, 1, and so on
+for example if you have 5 cameras, make video_1, video_2 and so on till video_5 and assign them int values from 0 to 4 respectively.
+4. Now after that create multiprocessing threads at the end using the same format and start those threads to access all the cameras at the same time and the model as well
+5. but beware that the more cameras you add the more load it will put on the system and the more VRAM and RAM will be needed to keep them running
+A sample output of 2 videos running at the same time is attached below (I have run 2 videos only because my laptop has enough vram for running only 2 inference engines at a time but the code has been written to accomodate any number of inference engines as long as the necessary hardware is provided):
+
+https://github.com/devashish-bhake/Person_reID/assets/79623853/86efe5f5-2849-4977-a3da-d9a6bfe557ef
+
 ## Person Re-identification
 ### Dataset collection
 The collection of dataset involves downloading the Market-1501 dataset which consists of 32,668 annotated bounding boxes of 1,501 identities. The dataset is divided into training and testing sets. The training set contains 12,936 images of 751 identities, while the testing set contains 19,732 images of 750 identities. The dataset is collected from public street view cameras with different cameras as well. The image annotations show which camera id has the image been captured from.
